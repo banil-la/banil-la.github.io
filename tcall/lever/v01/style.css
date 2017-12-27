@@ -78,7 +78,7 @@ header {
 section {
   margin: 20px 0;
   position: relative;
-  display: grid;
+  display: inline-block;
   padding: 30px; }
   section.deprecated .contents-wrapper, section.deprecated .table-divide {
     opacity: 0.3; }
