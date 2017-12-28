@@ -76,6 +76,7 @@ header {
       font-weight: 600; }
 
 section {
+  width: 100%;
   margin: 20px 0;
   position: relative;
   display: inline-block;
@@ -98,7 +99,7 @@ section {
       section:not(.title) {
         min-height: 560px; }
         section:not(.title).high-height {
-          min-height: 840px; }
+          min-height: 760px; }
           section:not(.title).high-height + section {
             min-height: 840px; }
       section:nth-child(2n) {
