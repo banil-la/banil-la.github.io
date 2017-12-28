@@ -87,7 +87,7 @@ section {
     color: #f00; }
   section.deprecated .s-title {
     color: #bbb; }
-  section:nth-child(2n-1) {
+  section:nth-child(2n) {
     background: #eee; }
   section.title {
     width: 100% !important; }
@@ -97,13 +97,11 @@ section {
       width: 50%;
       background: #fff !important; }
       section:not(.title) {
-        min-height: 560px; }
+        min-height: 600px; }
         section:not(.title).high-height {
-          min-height: 760px; }
-          section:not(.title).high-height + section {
-            min-height: 840px; }
-      section:nth-child(2n) {
-        margin-right: 0; } }
+          min-height: 820px; }
+          section:not(.title).high-height:nth-child(even) + section {
+            min-height: 820px; } }
   section .contents {
     width: 100%; }
     section .contents .contents-wrapper .img-wrapper, section .contents .contents-wrapper .video-wrapper {
