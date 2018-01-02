@@ -99,9 +99,11 @@ section {
       section:not(.title) {
         min-height: 600px; }
         section:not(.title).high-height {
-          min-height: 820px; }
-          section:not(.title).high-height:nth-child(even) + section {
-            min-height: 820px; } }
+          min-height: 840px; }
+          section:not(.title).high-height + section {
+            min-height: 840px; }
+      section:nth-child(2n) {
+        margin-right: 0; } }
   section .contents {
     width: 100%; }
     section .contents .contents-wrapper .img-wrapper, section .contents .contents-wrapper .video-wrapper {
