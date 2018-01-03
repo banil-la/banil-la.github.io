@@ -152,10 +152,14 @@ section {
         font-weight: 600; }
     section table td {
       width: 70%;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #555; }
       section table td.designed {
         color: #bbb; }
       section table td:first-child {
         width: 20%; }
       section table td:not(:first-child) {
         width: 80%; }
+      section table td.value {
+        color: #222;
+        text-decoration: underline; }
