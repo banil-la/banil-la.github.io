@@ -162,6 +162,9 @@ section {
       color: #555; }
       section table td.designed {
         color: #bbb; }
+      section table td.deprecated {
+        color: #bbb;
+        text-decoration: line-through; }
       section table td:first-child {
         width: 20%; }
       section table td:not(:first-child) {
