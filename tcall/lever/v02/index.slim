@@ -205,7 +205,61 @@ html5
 								tr
 									th Interpolator
 									td.deprecated Bounce
-			li.order-out
+			li
+				p.title 3. Animating Dots(Default)
+				p.s-title State: Common
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/dots.png" 
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/dots.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title.width100 Deny/Allow				
+						table.width50
+							tr
+								th.title colspan="2" Dot(Arrow - Color only)
+							tr
+								th Attribute
+								td Color
+							tr
+								th From
+								td.value 디자인 가이드
+							tr
+								th To
+								td.value 디자인 가이드
+							tr
+								th Duration
+								td.edited 300
+							tr
+								th Delay
+								td.edited index * 200
+							tr
+								th Interpolator
+								td Accelerate
+						table.width
+							tr
+								th.title colspan="2"
+							tr
+								th Attribute
+								td Scale
+							tr
+								th From
+								td.value 3dp(1)
+							tr
+								th To
+								td.value 5.25dp(1.75)
+							tr
+								th Duration
+								td.edited 300
+							tr
+								th Delay
+								td.edited index * 200
+							tr
+								th Interpolator
+								td Accelerate	
+			li.spec-out
 				p.title 4. Animating Group(Expanding / Shrinking) - 후순위 작업
 				p.s-title State: Pressed -> Released
 				.contents-wrapper
@@ -217,7 +271,7 @@ html5
 				.table-wrapper
 					.table-divide.width50
 						p.table-divide-title Deny					
-						table
+						table.width100
 							tr
 								th.title colspan="2" Dot/Arrow
 							tr
@@ -240,7 +294,7 @@ html5
 								td Decelerate
 					.table-divide.width50
 						p.table-divide-title Allow					
-						table
+						table.width100
 							tr
 								th.title colspan="2" Dot/Arrow
 							tr
@@ -261,7 +315,7 @@ html5
 							tr
 								th Interpolator
 								td Decelerate
-			li.deprecated.high-height
+			li.spec-out
 				p.title 5. Animating Group(Activating / Deactivating) - 스펙 아웃
 				p.s-title State: Pressed & Moving
 				.contents-wrapper
@@ -271,11 +325,9 @@ html5
 						video loop="" autoplay=""
 							source src="mov/dots_activating.mov" type="video/mp4"
 				.table-wrapper
-					/ li.width50 Before Reached
-					/ li.width50 When 
 					.table-divide.width50
 						p.table-divide-title Deny - Before Reached
-						table
+						table.width100
 							tr
 								th.title colspan="2" Group
 							tr
@@ -289,7 +341,7 @@ html5
 								td.value -(abs(X) * 100)%
 					.table-divide.width50
 						p.table-divide-title Allow - Before Reached
-						table
+						table.width100
 							tr
 								th.title colspan="2" Group
 							tr
@@ -303,7 +355,7 @@ html5
 								td.value +(abs(X) * 100)%
 					.table-divide.width50
 						p.table-divide-title Common - Before Reached
-						table
+						table.width100
 							tr
 								th.title colspan="2" Deactivating Group
 							tr
@@ -317,7 +369,7 @@ html5
 								td.value 1 - abs(X)
 					.table-divide.width50
 						p.table-divide-title Common - After Reached
-						table
+						table.width100
 							tr
 								th.title colspan="2" Activating Group
 							tr
@@ -456,8 +508,8 @@ html5
 							tr
 								th Duration
 								td 100
-			li
-				p.title 9. Initializing Lever Pos X
+			li.spec-out
+				p.title 9. Initializing Lever Pos X - 후순위 작업
 				p.s-title State: Pressed & Moiving -> Released
 				.contents-wrapper
 					.img-wrapper.width50
