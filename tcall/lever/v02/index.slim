@@ -11,6 +11,23 @@ html5
 			p.title Interaction Guide
 			p.desc T전화 수신레버 for Android
 
+		.mov-wrapper#target
+			p#toggleText onclick="toggleMov()" + 구동영상 보기
+			iframe src="https://player.vimeo.com/video/250240433" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+
+			javascript:
+				var target = document.getElementById('target');
+				var text = document.getElementById('toggleText');
+
+				function toggleMov(){
+					if (target.classList.contains('shrinked')){
+						target.classList.remove('shrinked');
+						text.textContent = '+ 구동영상 보기';
+					} else {
+						target.classList.add('shrinked');
+						text.textContent = '- 구동영상 닫기';
+					}
+				}
 		ul.flex-wrapper
 			li#standard
 				p.title Interation Elements & Standard

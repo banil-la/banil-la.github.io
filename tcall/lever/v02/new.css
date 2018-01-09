@@ -18,6 +18,20 @@ header {
       font-size: 14px;
       font-weight: 600; }
 
+.mov-wrapper {
+  padding: 0 30px;
+  height: 600px;
+  transition: height 0.3s; }
+  .mov-wrapper p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #1f4fe0; }
+  .mov-wrapper.shrinked {
+    height: 24px; }
+    .mov-wrapper.shrinked iframe {
+      opacity: 0; }
+
 .flex-wrapper {
   display: flex;
   flex-flow: row wrap;
