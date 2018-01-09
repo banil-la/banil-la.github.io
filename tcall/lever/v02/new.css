@@ -33,6 +33,12 @@ header {
     .flex-wrapper li#standard {
       width: 100% !important;
       padding: 30px !important; }
+    .flex-wrapper li.spec-out .contents-wrapper, .flex-wrapper li.spec-out .table-divide, .flex-wrapper li .deprecated .contents-wrapper, .flex-wrapper li .deprecated .table-divide {
+      opacity: 0.8; }
+    .flex-wrapper li.spec-out > .title, .flex-wrapper li .deprecated > .title {
+      color: #f00; }
+    .flex-wrapper li.spec-out .s-title, .flex-wrapper li .deprecated .s-title {
+      color: #bbb; }
     .flex-wrapper li p {
       margin: 4px 0;
       font-size: 14px; }
