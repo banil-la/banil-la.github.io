@@ -1,0 +1,645 @@
+html5
+	head
+		title T전화 mVoIP 발신 Interaction Guide, 180117
+		link rel="stylesheet" type="text/css" href="index.css"
+		meta charset="UTF-8"
+		meta name="T전화 mVoIP 발신 Interaction Guide"
+
+		meta content="" name="description"
+		meta content="True" name="HandheldFriendly"
+		meta content="320" name="MobileOptimized"
+		meta content="width=device-width, initial-scale=1, minimal-ui" name="viewport"
+		meta content="on" http-equiv="cleartype"
+		link href="img/touch/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"
+		link href="img/touch/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"
+		link href="img/touch/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"
+		link href="img/touch/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed"
+		link href="img/touch/touch-icon-196x196.png" rel="shortcut icon" sizes="196x196"
+		link href="img/touch/apple-touch-icon.png" rel="shortcut icon"
+		/! Tile icon for Win8 (144x144 + tile color)
+		meta content="img/touch/apple-touch-icon-144x144-precomposed.png" name="msapplication-TileImage"
+		meta content="#222222" name="msapplication-TileColor"
+
+	body
+		header
+			p.title Interaction Guide
+			p.desc T전화 mVoIP 발신 for iOS
+
+		.mov-wrapper#target.shrinked
+			p#toggleText onclick="toggleMov()" + 구동영상 보기
+			iframe src="https://player.vimeo.com/video/251768722" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+
+			javascript:
+				var target = document.getElementById('target');
+				var text = document.getElementById('toggleText');
+
+				function toggleMov(){
+					if (target.classList.contains('shrinked')){
+						target.classList.remove('shrinked');
+						text.textContent = '- 구동영상 닫기';
+					} else {
+						target.classList.add('shrinked');
+						text.textContent = '+ 구동영상 보기';
+					}
+				}
+		ul.flex-wrapper
+			li.standard
+				p.title Interation Elements & Standard: Top Area
+				.contents-wrapper
+					.img-wrapper.width33
+						img.common-img src="img/top_before.png" 
+					.img-wrapper.width33
+						img.common-img src="img/top_calling.png"
+					.img-wrapper.width33
+						img.common-img src="img/top_after.png"
+
+			li 
+				p.title 1. Start Call: Top Area
+				p.s-title State: Starting Call
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/top_start.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title.width100 Calling
+						.table-divide
+							table.width33
+								tr
+									th.title colspan="2" Guide
+								tr
+									th Attribute
+									td Height
+								tr
+									th From
+									td.value GUI Guide
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.4
+								tr
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.emptytitle colspan="2" &nbsp;
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.15
+								tr.ios
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Btn X
+								tr
+									th Attribute
+									td Changing Image
+								tr
+									th From
+									td.value Image(Close)
+								tr
+									th To
+									td.value Image(More)
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Fav
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0.2
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Fav Name
+								tr
+									th Attribute
+									td Y
+								tr
+									th From
+									td.value Default
+								tr
+									th To
+									td.value -20dp/pt
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.emptytitle colspan="2" &nbsp;
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Cid Name
+								tr
+									th Attribute
+									td Y
+								tr
+									th From
+									td.value Default
+								tr
+									th To
+									td.value -20dp/pt
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.emptytitle colspan="2" &nbsp;
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" State
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 0
+								tr
+									th To
+									td.value 1
+								tr
+									th Delay
+									td 0.2
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+					.table-divide.width100
+						p.table-divide-title.width100 Connected
+						.table-divide
+							table.width50
+								tr
+									th.title colspan="2" Btn View
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 0
+								tr
+									th To
+									td.value 1
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width50
+								tr
+									th.title colspan="2" Highlight
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 0
+								tr
+									th To
+									td.value 1
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+			li 
+				p.title 2. End Call: Top Area
+				p.s-title State: Ending Call
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/top_end.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title Disconnecting
+						.table-divide
+							table.width33
+								tr
+									th.title colspan="2" Btn View
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Highlight
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0.5
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Btn X
+								tr
+									th Attribute
+									td Changing Image
+								tr
+									th From
+									td.value Image(More)
+								tr
+									th To
+									td.value Image(Close)
+								tr
+									th Delay
+									td 0.5
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+					.table-divide.width100
+						p.table-divide-title Disconnected
+						.table-divide
+							table.width33
+								tr
+									th.title colspan="2" Fav
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0.2
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Fav Name
+								tr
+									th Attribute
+									td Y
+								tr
+									th From
+									td.value Default
+								tr
+									th To
+									td.value -20dp/pt
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.emptytitle colspan="2" &nbsp;
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 1
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.title colspan="2" Guide
+								tr
+									th Attribute
+									td Height
+								tr
+									th From
+									td.value 0
+								tr
+									th To
+									td.value GUI Guide
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.4
+								tr
+									th Animation
+									td Linear
+							table.width33
+								tr
+									th.emptytitle colspan="2" &nbsp;
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 0
+								tr
+									th To
+									td.value 1
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.15
+								tr.ios
+									th Animation
+									td Linear
+			li
+			li.standard
+				p.title Interation Elements & Standard: Bottom Area
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/flow.png" 
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/btm.mov" type="video/mp4"
+			li 
+				p.title 3. Start Call: Bottom Area
+				p.s-title State: Starting Call
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/btm_start.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width30
+						table.width100
+							tr
+								th.title colspan="2" Icn
+							tr
+								th Attribute
+								td Rotation
+							tr
+								th From
+								td.value 0
+							tr
+								th To
+								td.value 135
+							tr
+								th Delay
+								td 1
+							tr
+								th Duration
+								td 0.6
+							tr.ios
+								th Animation
+								td 
+									p Bezier(0,1,.3,1)
+									p Spring(damping: 0.6)
+					.table-divide.width70
+						table
+							tr
+								th.title colspan="2" Circle
+							tr
+								th Attribute
+								td Scaling
+							tr
+								th From
+								td.value 0
+							tr
+								th To
+								td.value 1
+							tr
+								th Delay
+								td 1
+							tr
+								th Duration
+								td 0.4
+							tr.ios
+								th Animation
+								td 
+									p Bezier(1, 0, 1, 1)
+									p Spring(damping: 0.6)
+						table
+							tr
+								th.emptytitle colspan="2" &nbsp;
+							tr
+								th Attribute
+								td Color(Image Changing)
+							tr
+								th From
+								td.value Image(Start Call)
+							tr
+								th To
+								td.value Image(End Call)
+							tr
+								th Delay
+								td 1.5
+							tr
+								th Duration
+								td 0.3
+							tr
+								th Animation
+								td Linear
+			li
+				p.title 4. End Call: Bottom Area
+				p.s-title State: Ending Call
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/btm_end.mov" type="video/mp4"
+				.table-wrapper		
+					.table-divide.width30
+						table.width100
+							tr
+								th.title colspan="2" Icn
+							tr
+								th Attribute
+								td Rotation
+							tr
+								th From
+								td.value 135
+							tr
+								th To
+								td.value 0
+							tr
+								th Delay
+								td 0
+							tr
+								th Duration
+								td 0.6
+							tr.ios
+								th Animation
+								td 
+									p Bezier(.3, 0, .3, 1)
+									p Spring(damping: 0.6)
+					.table-divide.width70
+						table
+							tr
+								th.title colspan="2" Circle
+							tr
+								th Attribute
+								td Scaling
+							tr
+								th From
+								td.value 1
+							tr
+								th To
+								td.value 0
+							tr
+								th Delay
+								td 0.6
+							tr
+								th Duration
+								td 0.2
+							tr.ios
+								th Animation
+								td 
+									p Bezier(1, 0, 1, 1)
+									p Spring(damping: 0.6)
+						table
+							tr
+								th.emptytitle colspan="2" &nbsp;
+							tr
+								th Attribute
+								td Color(Image Changing)
+							tr
+								th From
+								td.value Image(End Call)
+							tr
+								th To
+								td.value Image(Start Call)
+							tr
+								th Delay
+								td 0.5
+							tr
+								th Duration
+								td 0.3
+							tr.ios
+								th Animation
+								td Linear
