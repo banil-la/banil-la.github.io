@@ -48,9 +48,8 @@ html5
 				.contents-wrapper
 					.img-wrapper.width50
 						img.common-img src="img/btm.png"
-					.video-wrapper.width50
-						video loop="" autoplay=""
-							source src="mov/btm.mov" type="video/mp4"
+					.img-wrapper.width50
+						img.common-img src="img/standard.png"
 			li 
 				p.title 1. Flash
 				p.s-title State: When Captured
@@ -64,7 +63,7 @@ html5
 						.table-divide
 							table.width50
 								tr
-									th.title colspan="2" Flash(#fff)
+									th.title colspan="2" Show Flash(#fff)
 								tr
 									th Attribute
 									td Opacity
@@ -85,7 +84,7 @@ html5
 									td Linear
 							table.width50
 								tr
-									th.title colspan="2" Flash(#fff)
+									th.title colspan="2" Hide Flash(#fff)
 								tr
 									th Attribute
 									td Opacity
@@ -202,7 +201,7 @@ html5
 							source src="mov/btm_rec.mov" type="video/mp4"
 				.table-wrapper
 					.table-divide.width100
-						p.table-divide-title Recording(Longpress)
+						p.table-divide-title Recording
 						.table-divide
 							table.width50
 								tr
@@ -243,6 +242,48 @@ html5
 								tr
 									th Duration
 									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width50
+								tr
+									th.title colspan="2" Btn Effects, Btn Gallery/Btn Call
+								tr
+									th Attribute
+									td X
+								tr
+									th From
+									td.value 0(Default)
+								tr
+									th To
+									td.value 0 + (width * index)
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.6
+								tr.ios
+									th Animation
+									td Linear
+							table.width50
+								tr
+									th.emptytitle colspan="2" &nbsp;
+								tr
+									th Attribute
+									td Scaling
+								tr
+									th From
+									td.value 1(Default)
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.6
 								tr.ios
 									th Animation
 									td Linear
