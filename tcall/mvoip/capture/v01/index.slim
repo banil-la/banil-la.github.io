@@ -1,0 +1,248 @@
+html5
+	head
+		title T전화 mVoIP 촬영 Interaction Guide, 180117
+		link rel="stylesheet" type="text/css" href="index.css"
+		meta charset="UTF-8"
+		meta name="T전화 mVoIP 촬영 Interaction Guide"
+
+		meta content="" name="description"
+		meta content="True" name="HandheldFriendly"
+		meta content="320" name="MobileOptimized"
+		meta content="width=device-width, initial-scale=1, minimal-ui" name="viewport"
+		meta content="on" http-equiv="cleartype"
+		link href="img/touch/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"
+		link href="img/touch/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"
+		link href="img/touch/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"
+		link href="img/touch/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed"
+		link href="img/touch/touch-icon-196x196.png" rel="shortcut icon" sizes="196x196"
+		link href="img/touch/apple-touch-icon.png" rel="shortcut icon"
+		/! Tile icon for Win8 (144x144 + tile color)
+		meta content="img/touch/apple-touch-icon-144x144-precomposed.png" name="msapplication-TileImage"
+		meta content="#222222" name="msapplication-TileColor"
+
+	body
+		header
+			p.title Interaction Guide
+			p.desc T전화 mVoIP 촬영 for iOS
+
+		.mov-wrapper#target.shrinked
+			p#toggleText onclick="toggleMov()" + 구동영상 보기
+			iframe src="https://player.vimeo.com/video/252457858" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+
+			javascript:
+				var target = document.getElementById('target');
+				var text = document.getElementById('toggleText');
+
+				function toggleMov(){
+					if (target.classList.contains('shrinked')){
+						target.classList.remove('shrinked');
+						text.textContent = '- 구동영상 닫기';
+					} else {
+						target.classList.add('shrinked');
+						text.textContent = '+ 구동영상 보기';
+					}
+				}
+		ul.flex-wrapper
+			li.standard
+				p.title Interation Elements & Standard: Btm Area
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/btm.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/btm.mov" type="video/mp4"
+			li 
+				p.title 1. Flash
+				p.s-title State: When Captured
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/btm_first.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title Capturing
+						.table-divide
+							table.width50
+								tr
+									th.title colspan="2" Flash(#fff)
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 0
+								tr
+									th To
+									td.value 0.6
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+							table.width50
+								tr
+									th.title colspan="2" Flash(#fff)
+								tr
+									th Attribute
+									td Opacity
+								tr
+									th From
+									td.value 0.6
+								tr
+									th To
+									td.value 0
+								tr
+									th Delay
+									td 0.2
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Animation
+									td Linear
+
+			li 
+				p.title 2. Capture Screen: First
+				p.s-title State: Gallery Btn is hidden
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/btm_first.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title.width100 Capturing
+						.table-divide
+							table.width100
+								tr
+									th.title colspan="2" Btn Gallery
+								tr
+									th Attribute
+									td Scaling
+								tr
+									th From
+									td.value 0
+								tr
+									th To
+									td.value 1(Default)
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.4
+								tr
+									th Animation
+									td Spring(damping: 0.4)
+			li 
+				p.title 3. Capture Screen: Not first
+				p.s-title State: Gallery Btn is visible
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/btm_after.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width50
+						p.table-divide-title Scaling Up(Capturing)
+						.table-divide
+							table.width100
+								tr
+									th.title colspan="2" Btn Gallery
+								tr
+									th Attribute
+									td Scaling
+								tr
+									th From
+									td.value 1(Default)
+								tr
+									th To
+									td.value 1.2
+								tr
+									th Delay
+									td 0.3(Flash+@ Duration)
+								tr
+									th Duration
+									td 0.3
+								tr
+									th Animation
+									td Spring(damping: 0.6)
+					.table-divide.width50
+						p.table-divide-title Scaling Down(Capturing)
+						.table-divide
+							table.width100
+								tr
+									th.title colspan="2" Btn Gallery
+								tr
+									th Attribute
+									td Scaling
+								tr
+									th From
+									td.value 1.2
+								tr
+									th To
+									td.value 1(Default)
+								tr
+									th Delay
+									td 0.6(Flash+@ + Scaling Up Duration)
+								tr
+									th Duration
+									td 0.3
+								tr
+									th Animation
+									td Spring(damping: 0.6)
+			li 
+				p.title 4. Record Screen
+				p.s-title State: When Longpressed
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/btm_rec.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title Recording(Longpress)
+						.table-divide
+							table.width50
+								tr
+									th.title colspan="2" Outer
+								tr
+									th Attribute
+									td Scaling
+								tr
+									th From
+									td.value 1(Default)
+								tr
+									th To
+									td.value 1.86
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
+							table.width50
+								tr
+									th.title colspan="2" Inner
+								tr
+									th Attribute
+									td Scaling
+								tr
+									th From
+									td.value 1(Default)
+								tr
+									th To
+									td.value 0.9
+								tr
+									th Delay
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr.ios
+									th Animation
+									td Linear
