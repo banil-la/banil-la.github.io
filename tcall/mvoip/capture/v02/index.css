@@ -168,6 +168,10 @@ td > p:nth-child(3):before {
   font-weight: 600;
   text-decoration: underline; }
 
+.point {
+  color: #FF3B4C;
+  font-weight: 600; }
+
 .width25 {
   width: 25% !important; }
 
