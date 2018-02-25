@@ -9,31 +9,6 @@
 	],
 "creatorBuild": "26268",
 "files": {
-	"\/bk\/index.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/bk\/index.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/bk\/index.slim": {
-		"cB": 0,
-		"cmO": 0,
-		"ft": 1024,
-		"llg": 0,
-		"oA": 0,
-		"oAP": "\/bk\/index.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 1,
-		"rAC": 0
-		},
 	"\/framers\/capture_ios.framer\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -517,12 +492,12 @@
 		},
 	"\/framers\/capturebtn.framer\/framer\/preview.png": {
 		"ft": 32768,
-		"iS": 11194,
+		"iS": 2075,
 		"oA": 0,
 		"oAP": "\/framers\/capturebtn.framer\/framer\/preview.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -869,12 +844,12 @@
 		},
 	"\/framers\/items.framer\/framer\/preview.png": {
 		"ft": 32768,
-		"iS": 6481,
+		"iS": 165,
 		"oA": 0,
 		"oAP": "\/framers\/items.framer\/framer\/preview.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -973,23 +948,23 @@
 		},
 	"\/img\/shutter.png": {
 		"ft": 32768,
-		"iS": 16151,
+		"iS": 5169,
 		"oA": 0,
 		"oAP": "\/img\/shutter.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/img\/third-2.png": {
 		"ft": 32768,
-		"iS": 28757,
+		"iS": 6505,
 		"oA": 0,
 		"oAP": "\/img\/third-2.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -1120,6 +1095,31 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/index.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/index.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/index.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "\/index.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
 	"\/mov\/beauty.mov": {
 		"cB": 0,
 		"ft": 8192,
@@ -1139,6 +1139,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/mov\/item.mov",
+		"oF": 0
+		},
+	"\/mov\/selectitem.mov": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/mov\/selectitem.mov",
 		"oF": 0
 		},
 	"\/mov\/shutter.mov": {
