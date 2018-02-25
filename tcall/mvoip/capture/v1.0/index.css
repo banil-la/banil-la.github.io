@@ -1,0 +1,242 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  position: relative;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans KR', 'Sans-serif'; }
+
+header {
+  padding: 30px; }
+  header p {
+    margin: 0; }
+    header p.title {
+      font-size: 32px;
+      font-weight: 100; }
+    header p.desc {
+      font-size: 14px;
+      font-weight: 600; }
+
+.mov-wrapper {
+  padding: 0 30px;
+  height: 600px;
+  transition: height 0.3s; }
+  .mov-wrapper p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #1f4fe0; }
+  .mov-wrapper.shrinked {
+    height: 24px; }
+    .mov-wrapper.shrinked iframe {
+      opacity: 0; }
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 0; }
+  .flex-wrapper li {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    list-style-type: none;
+    text-overflow: ellipsis;
+    margin-bottom: 30px; }
+    .flex-wrapper li.standard {
+      width: 100% !important;
+      padding: 30px !important; }
+    .flex-wrapper li.spec-out .contents-wrapper, .flex-wrapper li.spec-out .table-divide, .flex-wrapper li .deprecated .contents-wrapper, .flex-wrapper li .deprecated .table-divide {
+      opacity: 0.8; }
+    .flex-wrapper li.spec-out > .title, .flex-wrapper li .deprecated > .title {
+      color: #f00; }
+    .flex-wrapper li.spec-out .s-title, .flex-wrapper li .deprecated .s-title {
+      color: #bbb; }
+    .flex-wrapper li p {
+      margin: 4px 0;
+      font-size: 14px; }
+      .flex-wrapper li p.title {
+        font-weight: 600; }
+      .flex-wrapper li p.s-title {
+        font-weight: 300; }
+
+.contents-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background: #2F313E; }
+  .contents-wrapper div {
+    float: left; }
+  .contents-wrapper .img-wrapper, .contents-wrapper .video-wrapper {
+    height: 175px;
+    position: relative;
+    text-align: center; }
+    .contents-wrapper .img-wrapper img, .contents-wrapper .video-wrapper img {
+      height: 100%; }
+    .contents-wrapper .img-wrapper video, .contents-wrapper .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      object-fit: cover;
+      display: block;
+      max-height: 175px;
+      max-width: 100%; }
+
+.table-wrapper .table-divide, .table-wrapper table {
+  float: left; }
+  .table-wrapper .table-divide .table-divide-title, .table-wrapper table .table-divide-title {
+    width: calc(100% - 5px);
+    padding: 14px;
+    margin-right: 5px;
+    background: #ddd;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 20px; }
+  .table-wrapper .table-divide:nth-child(2n) .table-divide-title, .table-wrapper table:nth-child(2n) .table-divide-title {
+    margin-left: 5px; }
+
+.table-wrapper table {
+  width: 50%; }
+
+tr td.value {
+  color: #6638F0;
+  font-weight: 600; }
+
+th, td {
+  text-align: left; }
+
+th {
+  font-size: 10px;
+  padding: 0 10px; }
+  th.title, th.emptytitle {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 10px; }
+  th.title::before, th.title::after {
+    content: '"';
+    font-weight: 100; }
+
+td, td > p {
+  font-size: 12px !important; }
+
+td:first-child {
+  width: 20%; }
+
+td:not(:first-child) {
+  width: 80%; }
+
+td.deprecated p {
+  color: #bbb;
+  text-decoration: line-through; }
+  td.deprecated p.edited {
+    color: #FF3B4C;
+    text-decoration: none !important; }
+
+td.edited {
+  color: #FF3B4C; }
+
+.value {
+  color: #6638F0;
+  font-weight: 600; }
+
+td > p.opt:before {
+  font-weight: 600;
+  font-size: 10px; }
+
+td > p.opt:first-child:before {
+  content: 'Opt.1 '; }
+
+td > p.opt:nth-child(2):before {
+  content: 'Opt.2 '; }
+
+td > p.opt:nth-child(3):before {
+  content: 'Opt.3 '; }
+
+td > p.os:before {
+  font-weight: 600;
+  font-size: 10px;
+  margin-right: 4px; }
+
+td > p.os.aos:before {
+  content: 'AOS:'; }
+
+td > p.os.ios:before {
+  content: 'iOS:'; }
+
+.total {
+  display: inline-block;
+  width: 100%;
+  line-height: 30px;
+  color: #F44A4D;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline; }
+
+.point {
+  color: #FF3B4C;
+  font-weight: 600; }
+
+.width25 {
+  width: 25% !important; }
+
+.width30 {
+  width: 30% !important; }
+
+.width33 {
+  width: 33% !important; }
+
+.width40 {
+  width: 33% !important; }
+
+.width50 {
+  width: 50% !important; }
+
+.width60 {
+  width: 60% !important; }
+
+.width70 {
+  width: 70% !important; }
+
+.width75 {
+  width: 75% !important; }
+
+.width100 {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+@media only screen and (min-width: 1440px) {
+  .flex-wrapper li {
+    width: 50%;
+    padding: 30px 15px 30px 30px; }
+    .flex-wrapper li:nth-child(2n-1) {
+      padding: 30px 30px 30px 15px; } }
+
+@media only screen and (max-width: 1280px) {
+  .standard .contents-wrapper {
+    display: inline-block; }
+    .standard .contents-wrapper .width25, .standard .contents-wrapper .width30, .standard .contents-wrapper .width33, .standard .contents-wrapper .width40, .standard .contents-wrapper .width50, .standard .contents-wrapper .width60, .standard .contents-wrapper .width70, .standard .contents-wrapper .width75, .standard .contents-wrapper .width100 {
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important; } }
+
+@media screen and (max-width: 768px) {
+  img, .contents-wrapper .img-wrapper, .contents-wrapper .video-wrapper {
+    width: auto; }
+  .flex-wrapper li {
+    width: 100%;
+    padding: 30px 30px; }
+  .contents-wrapper {
+    display: inline-block; }
+    .contents-wrapper div {
+      float: none !important; }
+  .width25, .width30, .width33, .width40, .width50, .width60, .width70, .width75, .width100 {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important; } }

@@ -1,0 +1,1 @@
+!function(e){e.__vekterVariables&&e.__vekterVariables.map(function(t){delete e[t]}),Object.assign(e,{}),e.__vekterVariables=[""],"function"==typeof Framer.CurrentContext.layout&&Framer.CurrentContext.layout()}(window);

@@ -1,0 +1,417 @@
+html5
+	head
+		title T전화 mVoIP 촬영 Interaction Guide, 180117
+		link rel="stylesheet" type="text/css" href="index.css"
+		meta charset="UTF-8"
+		meta name="T전화 mVoIP 촬영 Interaction Guide"
+
+		meta content="" name="description"
+		meta content="True" name="HandheldFriendly"
+		meta content="320" name="MobileOptimized"
+		meta content="width=device-width, initial-scale=1, minimal-ui" name="viewport"
+		meta content="on" http-equiv="cleartype"
+		link href="img/touch/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"
+		link href="img/touch/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"
+		link href="img/touch/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"
+		link href="img/touch/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed"
+		link href="img/touch/touch-icon-196x196.png" rel="shortcut icon" sizes="196x196"
+		link href="img/touch/apple-touch-icon.png" rel="shortcut icon"
+		/! Tile icon for Win8 (144x144 + tile color)
+		meta content="img/touch/apple-touch-icon-144x144-precomposed.png" name="msapplication-TileImage"
+		meta content="#222222" name="msapplication-TileColor"
+
+	body
+		header
+			p.title Interaction Guide
+			p.desc T전화 mVoIP AR Camera UI(iOS/AOS)
+
+		.mov-wrapper#target.shrinked
+			p#toggleText onclick="toggleMov()" + 구동영상 보기
+			iframe src="https://player.vimeo.com/video/257340037" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+
+			javascript:
+				var target = document.getElementById('target');
+				var text = document.getElementById('toggleText');
+
+				function toggleMov(){
+					if (target.classList.contains('shrinked')){
+						target.classList.remove('shrinked');
+						text.textContent = '- 구동영상 닫기';
+					} else {
+						target.classList.add('shrinked');
+						text.textContent = '+ 구동영상 보기';
+					}
+				}
+		ul.flex-wrapper
+			li.standard
+				p.title Interation Elements & Standard
+				.contents-wrapper
+					.img-wrapper.width33
+						img.common-img src="img/first.png"
+					.img-wrapper.width33
+						img.common-img src="img/second.png"
+					.img-wrapper.width33
+						img.common-img src="img/third.png"
+			li 
+				p.title 1. Capture Button
+				p.s-title State: Item is Hidden/Visible
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/shutter.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/shutter.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width50
+						p.table-divide-title Item: Hidden -> Visible
+						.table-divide.width50
+							table.width100
+								tr
+									th.title colspan="2" Scale/Size
+								tr
+									th From
+									td 1
+								tr
+									th To
+									td Design Guide
+								tr
+									th Duration
+									td 
+										p.os.ios 0.4
+										p.os.aos 0.2
+								tr
+									th Delay
+									td.value 0.1
+								tr
+									th Anim. Opt.
+									td
+										p.os.ios Spring(damping: 0.6)
+										p.os.aos Linear
+
+						.table-divide.width50
+							table.width100
+								tr
+									th.title colspan="2" Y
+								tr
+									th From
+									td Default
+								tr
+									th To
+									td Design Guide
+								tr
+									th Duration
+									td 
+										p.os.ios 0.4
+										p.os.aos 0.2
+								tr
+									th Delay
+									td.value 0.1
+								tr
+									th Anim. Opt.
+									td
+										p.os.ios Spring(damping: 0.6)
+										p.os.aos Linear
+					.table-divide.width50
+						p.table-divide-title Item: Visible -> Hidden
+						.table-divide.width100
+						.table-divide.width50
+							table.width100
+								tr
+									th.title colspan="2" Scale/Size
+								tr
+									th From
+									td 1
+								tr
+									th To
+									td Design Guide
+								tr
+									th Duration
+									td 
+										p.os.ios 0.4
+										p.os.aos 0.2
+								tr
+									th Delay
+									td.value 0
+								tr
+									th Anim. Opt.
+									td
+										p.os.ios Spring(damping: 0.6)
+										p.os.aos Linear
+						.table-divide.width50
+							table.width100
+								tr
+									th.title colspan="2" Y
+								tr
+									th From
+									td Default
+								tr
+									th To
+									td Design Guide
+								tr
+									th Duration
+									td 
+										p.os.ios 0.4
+										p.os.aos 0.2
+								tr
+									th Delay
+									td.value 0
+								tr
+									th Anim. Opt.
+									td
+										p.os.ios Spring(damping: 0.6)
+										p.os.aos Linear
+
+			li 
+				p.title 2. Utils
+				p.s-title State: Item is Hidden/Visible
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/first.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/utils.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title Item: Hidden -> Visible / Visible -> Hidden
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From/To
+									td 0/1
+								tr
+									th Duration
+									td.value 0
+								tr
+									th Anim. Opt.
+									td
+										p.os.ios 0
+										p.os.aos 0
+
+			li 
+				p.title 3. Item ScrollView
+				p.s-title State: Item is Hidden/Visible
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/second-2.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/item.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width50
+						p.table-divide-title Item: Hidden -> Visible
+						.table-divide.width100
+							table.width50
+								tr
+									th.title colspan="2" X
+								tr
+									th From
+									td 30
+								tr
+									th To
+									td 0(Default)
+								tr
+									th Duration
+									td 
+										p.os.ios 0.3
+										p.os.aos 0.2
+								tr
+									th Anim. Opt.
+									td 
+										p.os.ios Spring(damping: 0.8)
+										p.os.aos Linear
+							table.width50
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From
+									td Hidden
+								tr
+									th To
+									td Visible
+								tr
+									th Duration
+									td.value 0
+								tr
+									th Anim. Opt.
+									td None
+					.table-divide.width50
+						p.table-divide-title Item: Visible -> Hidden
+						.table-divide.width100
+							table.width50
+								tr
+									th.title colspan="2" X
+								tr
+									th From
+									td 0(Default)
+								tr
+									th To
+									td 30
+								tr
+									th Duration
+									td.value 0
+								tr
+									th Anim. Opt.
+									td None
+							table.width50
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From
+									td Hidden
+								tr
+									th To
+									td Visible
+								tr
+									th Duration
+									td.value 0
+								tr
+									th Anim. Opt.
+									td None
+			li 
+				p.title 4. Beauty Utils
+				p.s-title State: Item is Hidden/Visible
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/second-1.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/beauty.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width50
+						p.table-divide-title Item: Hidden -> Visible
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From
+									td 0
+								tr
+									th To
+									td 1
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Anim. Opt.
+									td Linear
+					.table-divide.width50
+						p.table-divide-title Item: Visible -> Hidden
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From
+									td 1
+								tr
+									th To
+									td 0
+								tr
+									th Duration
+									td 0
+								tr
+									th Anim. Opt.
+									td None
+			li 
+				p.title 4. Beauty Gauge(Visible/Hidden)
+				p.s-title State: Toggle Beauty Gauge
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/third.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/slider.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width50
+						p.table-divide-title Item: Hidden -> Visible
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From
+									td 0
+								tr
+									th To
+									td 1
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Anim. Opt.
+									td Linear
+					.table-divide.width50
+						p.table-divide-title Item: Visible -> Hidden
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From
+									td 1
+								tr
+									th To
+									td 0
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Anim. Opt.
+									td Linear
+
+			li 
+				p.title 5. Beauty Gauge Effector
+				p.s-title State: Pressed Handler
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/third-2.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/slider2.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width50
+						p.table-divide-title Item: Released -> Pressed
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Scaling
+								tr
+									th From
+									td Default
+								tr
+									th To
+									td Design Guide(Expanded)
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Anim. Opt.
+									td Linear
+					.table-divide.width50
+						p.table-divide-title Item: Pressed -> Released
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Scaling
+								tr
+									th From
+									td Design Guide(Expanded)
+								tr
+									th To
+									td Default
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Anim. Opt.
+									td Linear
+			li 
+				p.title 6. Flashing
+				p.s-title State: Undefined
+				.contents-wrapper
+					.video-wrapper.width100
+						video loop="" autoplay=""
+							source src="mov/flashing.mov" type="video/mp4"
