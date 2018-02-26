@@ -53,7 +53,7 @@ html5
 					.img-wrapper.width33
 						img.common-img src="img/third.png"
 			li 
-				p.title 1. Capture Button
+				p.title 1. Capture Button: Location
 				p.s-title State: Item is Hidden/Visible
 				.contents-wrapper
 					.img-wrapper.width50
@@ -160,9 +160,34 @@ html5
 									td
 										p.os.ios Spring(damping: 0.6)
 										p.os.aos Linear
+			li 
+				p.title 2. Capture Button: Recording
+				p.s-title State: Item is Hidden/Visible
+				.contents-wrapper
+					.img-wrapper.width50
+						img.common-img src="img/shutter.png"
+					.video-wrapper.width50
+						video loop="" autoplay=""
+							source src="mov/capturing.mov" type="video/mp4"
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title Pressed / Relased
+						.table-divide.width100
+							table.width100
+								tr
+									th.title colspan="2" Scale/Size
+								tr
+									th From/To
+									td Design Guide
+								tr
+									th Duration
+									td 0.2
+								tr
+									th Anim. Opt.
+									td Linear
 
 			li 
-				p.title 2. Utils
+				p.title 3. Utils
 				p.s-title State: Item is Hidden/Visible
 				.contents-wrapper
 					.img-wrapper.width50
@@ -185,12 +210,10 @@ html5
 									td.value 0
 								tr
 									th Anim. Opt.
-									td
-										p.os.ios 0
-										p.os.aos 0
+									td None
 
 			li 
-				p.title 3. Item ScrollView
+				p.title 4. Item ScrollView
 				p.s-title State: Item is Hidden/Visible
 				.contents-wrapper
 					.img-wrapper.width50
@@ -204,10 +227,10 @@ html5
 						.table-divide.width100
 							table.width50
 								tr
-									th.title colspan="2" X
+									th.title.value colspan="2" Y
 								tr
 									th From
-									td 30
+									td.value 100(PT/DP)
 								tr
 									th To
 									td 0(Default)
@@ -241,13 +264,13 @@ html5
 						.table-divide.width100
 							table.width50
 								tr
-									th.title colspan="2" X
+									th.title colspan="2" Y
 								tr
 									th From
 									td 0(Default)
 								tr
 									th To
-									td 30
+									td.value 100(PT/DP)
 								tr
 									th Duration
 									td.value 0
@@ -269,8 +292,9 @@ html5
 								tr
 									th Anim. Opt.
 									td None
+
 			li 
-				p.title 4. Select Item
+				p.title 5. Select Item
 				p.s-title State: Item is Visible
 				.contents-wrapper
 					.img-wrapper.width50
@@ -279,17 +303,14 @@ html5
 						video loop="" autoplay=""
 							source src="mov/selectitem.mov" type="video/mp4"
 				.table-wrapper
-					.table-divide.width50
+					.table-divide.width100
 						p.table-divide-title Item: Unselected -> Selected
 						.table-divide.width100
 							table.width100
 								tr
 									th.title colspan="2" Scaling
 								tr
-									th From
-									td Default(1)
-								tr
-									th To
+									th From/To
 									td Design Guide
 								tr
 									th Duration
@@ -297,26 +318,9 @@ html5
 								tr
 									th Anim. Opt.
 									td Linear
-					.table-divide.width50
-						p.table-divide-title Item: Selected -> Unselected
-						.table-divide.width100
-							table.width100
-								tr
-									th.title colspan="2" Scaling
-								tr
-									th From
-									td Design Guide
-								tr
-									th To
-									td Default(1)
-								tr
-									th Duration
-									td 0.2
-								tr
-									th Anim. Opt.
-									td Linear
+
 			li 
-				p.title 5. Beauty Utils
+				p.title 6. Beauty Utils
 				p.s-title State: Item is Hidden/Visible
 				.contents-wrapper
 					.img-wrapper.width50
@@ -339,7 +343,7 @@ html5
 									td 1
 								tr
 									th Duration
-									td 0.2
+									td.value 0.2
 								tr
 									th Anim. Opt.
 									td Linear
@@ -357,12 +361,13 @@ html5
 									td 0
 								tr
 									th Duration
-									td 0
+									td.value 0
 								tr
 									th Anim. Opt.
 									td None
+
 			li 
-				p.title 6. Beauty Gauge(Visible/Hidden)
+				p.title 7. Beauty Gauge(Visible/Hidden)
 				p.s-title State: Toggle Beauty Gauge
 				.contents-wrapper
 					.img-wrapper.width50
@@ -371,36 +376,15 @@ html5
 						video loop="" autoplay=""
 							source src="mov/slider.mov" type="video/mp4"
 				.table-wrapper
-					.table-divide.width50
-						p.table-divide-title Item: Hidden -> Visible
+					.table-divide.width100
+						p.table-divide-title Item: Hidden -> Visible / Visible -> Hidden
 						.table-divide.width100
 							table.width100
 								tr
 									th.title colspan="2" Opacity
 								tr
-									th From
-									td 0
-								tr
-									th To
-									td 1
-								tr
-									th Duration
-									td 0.2
-								tr
-									th Anim. Opt.
-									td Linear
-					.table-divide.width50
-						p.table-divide-title Item: Visible -> Hidden
-						.table-divide.width100
-							table.width100
-								tr
-									th.title colspan="2" Opacity
-								tr
-									th From
-									td 1
-								tr
-									th To
-									td 0
+									th From/To
+									td 0/1
 								tr
 									th Duration
 									td 0.2
@@ -409,7 +393,7 @@ html5
 									td Linear
 
 			li 
-				p.title 7. Beauty Gauge Effector
+				p.title 8. Beauty Gauge Effector
 				p.s-title State: Pressed Handler
 				.contents-wrapper
 					.img-wrapper.width50
@@ -418,44 +402,24 @@ html5
 						video loop="" autoplay=""
 							source src="mov/slider2.mov" type="video/mp4"
 				.table-wrapper
-					.table-divide.width50
+					.table-divide.width100
 						p.table-divide-title Item: Released -> Pressed
 						.table-divide.width100
 							table.width100
 								tr
 									th.title colspan="2" Scaling
 								tr
-									th From
-									td Default
-								tr
-									th To
-									td Design Guide(Expanded)
+									th From/TO
+									td Default/Design Guide(Expanded)
 								tr
 									th Duration
 									td 0.2
 								tr
 									th Anim. Opt.
 									td Linear
-					.table-divide.width50
-						p.table-divide-title Item: Pressed -> Released
-						.table-divide.width100
-							table.width100
-								tr
-									th.title colspan="2" Scaling
-								tr
-									th From
-									td Design Guide(Expanded)
-								tr
-									th To
-									td Default
-								tr
-									th Duration
-									td 0.2
-								tr
-									th Anim. Opt.
-									td Linear
+
 			li 
-				p.title 6. Flashing
+				p.title 9. Flashing
 				p.s-title State: Undefined
 				.contents-wrapper
 					.video-wrapper.width100

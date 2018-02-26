@@ -277,13 +277,6 @@
 		"oAP": "\/framers\/capturebtn.framer\/.gitignore",
 		"oF": 0
 		},
-	"\/framers\/capturebtn.framer\/.viewer.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/capturebtn.framer\/.viewer.html",
-		"oF": 0
-		},
 	"\/framers\/capturebtn.framer\/app.coffee": {
 		"ft": 32,
 		"ma": 0,
@@ -294,13 +287,6 @@
 		"oS": 0,
 		"sC": 1,
 		"tS": 1
-		},
-	"\/framers\/capturebtn.framer\/framer\/.framer.modules.js.hash": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/capturebtn.framer\/framer\/.framer.modules.js.hash",
-		"oF": 0
 		},
 	"\/framers\/capturebtn.framer\/framer\/coffee-script.js": {
 		"ft": 64,
@@ -483,24 +469,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/framers\/capturebtn.framer\/framer\/manifest.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/capturebtn.framer\/framer\/manifest.txt",
-		"oF": 0
-		},
-	"\/framers\/capturebtn.framer\/framer\/preview.png": {
-		"ft": 32768,
-		"iS": 2075,
-		"oA": 0,
-		"oAP": "\/framers\/capturebtn.framer\/framer\/preview.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/framers\/capturebtn.framer\/framer\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -516,13 +484,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/framers\/capturebtn.framer\/framer\/version",
-		"oF": 0
-		},
-	"\/framers\/capturebtn.framer\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/capturebtn.framer\/Icon\r",
 		"oF": 0
 		},
 	"\/framers\/capturebtn.framer\/images\/.gitkeep": {
@@ -557,13 +518,6 @@
 		"oAP": "\/framers\/items.framer\/.gitignore",
 		"oF": 0
 		},
-	"\/framers\/items.framer\/.viewer.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/.viewer.html",
-		"oF": 0
-		},
 	"\/framers\/items.framer\/app.coffee": {
 		"ft": 32,
 		"ma": 0,
@@ -590,48 +544,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/framers\/items.framer\/framer\/.bookmark",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/framer\/.framer.modules.js.hash": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/.framer.modules.js.hash",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 17.58.58.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 17.58.58.zip",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 17.59.58.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 17.59.58.zip",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 18.00.58.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 18.00.58.zip",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 18.01.58.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 18.01.58.zip",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 18.02.58.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/backups\/backup-2018-02-25 18.02.58.zip",
 		"oF": 0
 		},
 	"\/framers\/items.framer\/framer\/coffee-script.js": {
@@ -835,24 +747,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/framers\/items.framer\/framer\/manifest.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/manifest.txt",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/framer\/preview.png": {
-		"ft": 32768,
-		"iS": 165,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/framer\/preview.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/framers\/items.framer\/framer\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -868,13 +762,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/framers\/items.framer\/framer\/version",
-		"oF": 0
-		},
-	"\/framers\/items.framer\/Icon\r": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/framers\/items.framer\/Icon\r",
 		"oF": 0
 		},
 	"\/framers\/items.framer\/images\/.gitkeep": {
@@ -1125,6 +1012,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/mov\/beauty.mov",
+		"oF": 0
+		},
+	"\/mov\/capturing.mov": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/mov\/capturing.mov",
 		"oF": 0
 		},
 	"\/mov\/full.mov": {
