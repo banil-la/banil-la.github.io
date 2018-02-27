@@ -1029,6 +1029,18 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/index.slim": {
+		"cB": 0,
+		"cmO": 0,
+		"ft": 1024,
+		"llg": 0,
+		"oA": 0,
+		"oAP": "\/index.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"rAC": 0
+		},
 	"\/mov\/aricon.mov": {
 		"cB": 0,
 		"ft": 8192,
