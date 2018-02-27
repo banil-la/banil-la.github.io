@@ -789,6 +789,17 @@
 		"sC": 1,
 		"tS": 1
 		},
+	"\/img\/anim.png": {
+		"ft": 32768,
+		"iS": 146823,
+		"oA": 0,
+		"oAP": "\/img\/anim.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/first.png": {
 		"ft": 32768,
 		"iS": 23031,
@@ -797,6 +808,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/icon.png": {
+		"ft": 32768,
+		"iS": 103091,
+		"oA": 0,
+		"oAP": "\/img\/icon.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1006,6 +1028,13 @@
 		"oFM": 0,
 		"oS": 1,
 		"rAC": 0
+		},
+	"\/mov\/aricon.mov": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/mov\/aricon.mov",
+		"oF": 0
 		},
 	"\/mov\/beauty.mov": {
 		"cB": 0,
