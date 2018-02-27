@@ -1,0 +1,86 @@
+html5
+	head
+		title T전화 mVoIP 촬영 Interaction Guide, 180117
+		link rel="stylesheet" type="text/css" href="index.css"
+		meta charset="UTF-8"
+		meta name="T전화 mVoIP 촬영 Interaction Guide"
+
+		meta content="" name="description"
+		meta content="True" name="HandheldFriendly"
+		meta content="320" name="MobileOptimized"
+		meta content="width=device-width, initial-scale=1, minimal-ui" name="viewport"
+		meta content="on" http-equiv="cleartype"
+		link href="img/touch/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144"
+		link href="img/touch/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114"
+		link href="img/touch/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72"
+		link href="img/touch/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed"
+		link href="img/touch/touch-icon-196x196.png" rel="shortcut icon" sizes="196x196"
+		link href="img/touch/apple-touch-icon.png" rel="shortcut icon"
+		/! Tile icon for Win8 (144x144 + tile color)
+		meta content="img/touch/apple-touch-icon-144x144-precomposed.png" name="msapplication-TileImage"
+		meta content="#222222" name="msapplication-TileColor"
+
+	body
+		header
+			p.title Interaction Guide
+			p.desc T전화 mVoIP Home Screen
+
+		.mov-wrapper#target
+			p#toggleText onclick="toggleMov()" + 구동영상 닫기
+			iframe src="https://player.vimeo.com/video/257663178" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+
+			javascript:
+				var target = document.getElementById('target');
+				var text = document.getElementById('toggleText');
+
+				function toggleMov(){
+					if (target.classList.contains('shrinked')){
+						target.classList.remove('shrinked');
+						text.textContent = '- 구동영상 닫기';
+					} else {
+						target.classList.add('shrinked');
+						text.textContent = '+ 구동영상 보기';
+					}
+				}
+		ul.flex-wrapper
+			li 
+				p.title 1. Hidden(Close) shrinked mVoIP View
+				p.s-title State: on Home Screen
+				.table-wrapper
+					.table-divide.width100
+						p.table-divide-title Hidden mVoip View
+						.table-divide.width50
+							table.width100
+								tr
+									th.title colspan="2" Opacity
+								tr
+									th From
+									td 1
+								tr
+									th To
+									td 0
+								tr
+									th Duration
+									td.value 0.15
+								tr
+									th Anim. Opt.
+									td Linear
+						.table-divide.width50
+							table.width100
+								tr
+									th.title colspan="2" Y
+								tr
+									th From
+									td 0(Current Y)
+								tr
+									th To
+									td 0 + 100
+								tr
+									th Duration
+									td.value 0.2
+								tr
+									th Delay
+									td.value 0.05
+								tr
+									th Anim. Opt.
+									td Linear
