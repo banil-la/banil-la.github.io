@@ -7,7 +7,7 @@
 		"uuidString": "9E96A8B2-61D3-46FE-8D5E-44D2268DFF76"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/img\/anim.png": {
 		"ft": 32768,
@@ -254,6 +254,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/mov\/home.mov",
+		"oF": 0
+		},
+	"\/mov\/home2.mov": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/mov\/home2.mov",
 		"oF": 0
 		}
 	},
