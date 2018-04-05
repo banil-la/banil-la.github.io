@@ -11,7 +11,7 @@
 "files": {
 	"\/img\/ar_icon.png": {
 		"ft": 32768,
-		"iS": 44779,
+		"iS": 44771,
 		"oA": 0,
 		"oAP": "\/img\/ar_icon.png",
 		"oF": 0,
@@ -38,69 +38,6 @@
 		"oFM": 0,
 		"oS": 1,
 		"rAC": 0
-		},
-	"\/mov\/btns.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/btns.mov",
-		"oF": 0
-		},
-	"\/mov\/dots.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/dots.mov",
-		"oF": 0
-		},
-	"\/mov\/dots_activating.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/dots_activating.mov",
-		"oF": 0
-		},
-	"\/mov\/icncirclebtn.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/icncirclebtn.mov",
-		"oF": 0
-		},
-	"\/mov\/lever.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/lever.mov",
-		"oF": 0
-		},
-	"\/mov\/lever_initializing.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/lever_initializing.mov",
-		"oF": 0
-		},
-	"\/mov\/lever_moving.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/lever_moving.mov",
-		"oF": 0
-		},
-	"\/mov\/lever_pressed.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/lever_pressed.mov",
-		"oF": 0
-		},
-	"\/mov\/shrinking.mov": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/mov\/shrinking.mov",
-		"oF": 0
 		},
 	"\/new.css": {
 		"aP": 1,
