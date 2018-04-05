@@ -1,0 +1,179 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  position: relative;
+  display: block;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans KR', 'Sans-serif'; }
+
+body {
+  min-width: 600px; }
+
+.width25 {
+  width: 25%; }
+
+.width30 {
+  width: 30%; }
+
+.width50 {
+  width: 50%; }
+
+.width70 {
+  width: 70%; }
+
+.width75 {
+  width: 75%; }
+
+.width100 {
+  width: 100%; }
+
+.table-divide, .table-divide {
+  float: left; }
+
+@media only screen and (min-width: 1440px) {
+  .table-divide.width50 {
+    width: 50%; } }
+
+.table-divide-title {
+  display: inline-block;
+  width: 100%;
+  background: #ddd;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 20px; }
+
+.contents-wrapper, .table-wrapper {
+  width: 100%;
+  display: inline-block; }
+
+.contents-wrapper {
+  margin-top: 20px;
+  background: #2F313E;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; }
+  .contents-wrapper .common-img {
+    height: 175px;
+    position: relative; }
+
+.table-wrapper {
+  position: relative; }
+  .table-wrapper li {
+    float: left;
+    font-size: 16px; }
+
+header {
+  padding: 30px; }
+  header p {
+    margin: 0; }
+    header p.title {
+      font-size: 32px;
+      font-weight: 100; }
+    header p.desc {
+      font-size: 14px;
+      font-weight: 600; }
+
+section {
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+  display: inline-block;
+  padding: 30px; }
+  section.deprecated .contents-wrapper, section.deprecated .table-divide {
+    opacity: 0.3; }
+  section.deprecated > .title {
+    color: #f00; }
+  section.deprecated .s-title {
+    color: #bbb; }
+  section.order-out .contents-wrapper, section.order-out .table-divide {
+    opacity: 0.8; }
+  section.order-out > .title {
+    color: #f00; }
+  section.order-out .s-title {
+    color: #bbb; }
+  section:nth-child(2n) {
+    background: #eee; }
+  section.title {
+    width: 100% !important; }
+  @media only screen and (min-width: 1440px) {
+    section {
+      float: left;
+      width: 50%;
+      background: #fff !important; }
+      section:not(.title) {
+        min-height: 650px; }
+        section:not(.title).high-height {
+          min-height: 840px; }
+          section:not(.title).high-height + section {
+            min-height: 840px; }
+      section:nth-child(2n) {
+        margin-right: 0; } }
+  section .contents {
+    width: 100%; }
+    section .contents .contents-wrapper .img-wrapper, section .contents .contents-wrapper .video-wrapper {
+      height: 175px;
+      overflow: hidden;
+      text-align: center;
+      float: left; }
+    section .contents .contents-wrapper .video-wrapper {
+      position: relative; }
+      section .contents .contents-wrapper .video-wrapper video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        object-fit: cover;
+        display: block;
+        max-height: 175px;
+        max-width: 100%; }
+  section p {
+    margin: 4px 0;
+    font-size: 14px; }
+    section p.title {
+      font-weight: 600; }
+    section p.s-title {
+      font-weight: 300; }
+  section table {
+    width: 50%;
+    float: left; }
+    @media only screen and (max-width: 960px) {
+      section table {
+        width: 50%; } }
+    section table * {
+      font-size: 12px;
+      text-align: left; }
+    section table tr:first-child {
+      height: 40px; }
+    section table tr:nth-child(2) td {
+      color: #6638F0; }
+    section table th {
+      width: 30%;
+      font-weight: 300; }
+      section table th.title {
+        font-size: 14px;
+        font-weight: 600; }
+    section table td {
+      width: 70%;
+      font-weight: 600;
+      color: #555; }
+      section table td.designed {
+        color: #bbb; }
+      section table td.deprecated p {
+        color: #bbb;
+        text-decoration: line-through; }
+        section table td.deprecated p.edited {
+          color: #FF3B4C;
+          text-decoration: none !important; }
+      section table td:first-child {
+        width: 20%; }
+      section table td:not(:first-child) {
+        width: 80%; }
+      section table td.value {
+        color: #222;
+        text-decoration: underline; }
+      section table td.edited {
+        color: #FF3B4C; }

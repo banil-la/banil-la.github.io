@@ -1,0 +1,183 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css)
+
+*
+	box-sizing: border-box
+	
+html, body
+	margin: 0
+	position: relative
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans KR', 'Sans-serif'
+
+header
+	padding: 30px
+	p
+		margin: 0
+		&.title
+			font-size: 32px
+			font-weight: 100
+		&.desc
+			font-size: 14px
+			font-weight: 600
+
+.mov-wrapper
+	padding: 0 30px
+	height: 600px
+	transition: height 0.3s
+	p
+		font-size: 12px
+		font-weight: 600
+		line-height: 24px
+		color: #1f4fe0
+	&.shrinked
+		height: 24px
+		iframe
+			opacity: 0
+
+.flex-wrapper
+	display: flex
+	flex-flow: row wrap
+	justify-content: flex-start
+	padding: 0
+	li
+		width: 100%
+		padding: 30px
+		position: relative
+		list-style-type: none
+		text-overflow: ellipsis
+		margin-bottom: 30px
+		&#standard
+			width: 100% !important
+			padding: 30px !important
+
+		&.spec-out, .deprecated
+			.contents-wrapper, .table-divide
+				opacity: 0.8
+			& > .title
+				color: #f00
+			.s-title
+				color: #bbb
+
+		p
+			margin: 4px 0
+			font-size: 14px
+			&.title
+				font-weight: 600
+			&.s-title
+				font-weight: 300
+
+.contents-wrapper
+	width: 100%
+	position: relative
+	display: flex
+	background: #2F313E
+	div
+		float: left
+	.img-wrapper, .video-wrapper
+		height: 175px
+		position: relative
+		text-align: center
+		img
+			height: 100%
+		video
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			margin: auto
+			object-fit: cover
+			display: block
+			max-height: 175px
+			max-width: 100%
+
+.table-wrapper
+	.table-divide, table
+		float: left
+		.table-divide-title
+			width: calc(100% - 5px)
+			padding: 14px
+			margin-right: 5px
+			background: #ddd
+			display: inline-block
+			font-weight: 600
+			margin-top: 20px
+
+		&:nth-child(2n)
+			.table-divide-title
+				margin-left: 5px
+
+		// &::before
+		// 	background: #00f
+		// 	width: 10px
+		// 	height: 50px
+		// 	content: ' !'
+	table
+		width: 50%
+tr
+	&:nth-child(2)
+		td
+			color: #6638F0
+			font-weight: 600
+th, td
+	text-align: left
+th
+	font-size: 10px
+	padding: 0 10px
+	&.title
+		font-size: 18px
+		font-weight: 600
+		text-transform: uppercase
+		padding: 14px 10px
+		&::before, &::after
+			content: '"'
+			font-weight: 100
+td
+	font-size: 12px
+	&:first-child
+		width: 20%
+	&:not(:first-child)
+		width: 80%
+	&.value
+		color: #222
+		font-weight: 600
+		text-decoration: underline
+	&.deprecated
+		p
+			color: #bbb
+			text-decoration: line-through
+			&.edited
+				color: #FF3B4C
+				text-decoration: none !important
+	&.edited
+		color: #FF3B4C
+
+
+// add rule
+.width25
+	width: 25% !important
+.width30
+	width: 30% !important
+.width33
+	width: 33% !important
+.width50
+	width: 50% !important
+.width70
+	width: 70% !important
+.width75
+	width: 75% !important
+.width100
+	width: 100% !important
+
+
+// responsive
+$screen-max-width: 1440px
+$screen-50-width-break: 1280px
+$screen-table-width-break: 960px
+@media only screen and (min-width: $screen-max-width)
+	.flex-wrapper
+		li
+			width: 50%
+			padding: 30px 15px 30px 30px
+
+			&:nth-child(2n-1)
+				padding: 30px 30px 30px 15px
