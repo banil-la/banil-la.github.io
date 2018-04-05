@@ -12,8 +12,8 @@ html5
 			p.desc T전화 키패드 콜라 아이콘
 
 		.mov-wrapper#target
-			p#toggleText onclick="toggleMov()" - 구동영상 닫기
-			iframe src="https://player.vimeo.com/video/263333984" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+			p#toggleText onclick="toggleMov()" - 구동영상(3배속) 닫기
+			iframe src="https://player.vimeo.com/video/263348183" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
 
 			javascript:
 				var target = document.getElementById('target');
@@ -22,10 +22,10 @@ html5
 				function toggleMov(){
 					if (target.classList.contains('shrinked')){
 						target.classList.remove('shrinked');
-						text.textContent = '- 구동영상 닫기';
+						text.textContent = '- 구동영상(3배속) 닫기';
 					} else {
 						target.classList.add('shrinked');
-						text.textContent = '+ 구동영상 보기';
+						text.textContent = '+ 구동영상(3배속) 보기';
 					}
 				}
 		ul.flex-wrapper
@@ -33,6 +33,11 @@ html5
 				p.title Interation Elements & Standard
 				.contents-wrapper style="text-align:center;background:#F0F0F0;"
 					img src="img/ar_icon.png"
+				.table-wrapper
+					p * 위 영상은 3배속 입니다.
+					p - 홈 화면 진입 -> 1초 후 시작
+					p - 첫 1회만 아이콘 각각 다른 색상으로 Tilting
+
 
 			/ li 
 			/ 	p.title 1. Animating Icn, Circle, Label
